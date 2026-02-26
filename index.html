@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrueFocus</title>
-  <link rel="icon" type="image/png" href="favicon1.png">
-  <meta name="theme-color" content="#0f172a">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#0f172a">
 </head>
 <body>
 
@@ -17,6 +17,7 @@
   <h1>TrueFocus</h1>
   <div>
     <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
     <a href="#pricing">Pricing</a>
     <a href="#download">Download</a>
     <a href="#support">Support</a>
@@ -25,70 +26,136 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <h2>Ethical AI for Online Exams</h2>
-  <p>AI-powered focus tracking and exam integrity — built with privacy first.</p>
+  <h2>AI That Protects Focus & Exam Integrity</h2>
+  <p>
+    TrueFocus is a privacy-first AI system designed to help students stay focused
+    and help institutions maintain academic integrity — without invasive recording.
+  </p>
   <div>
-    <button class="btn primary">Download</button>
-    <button class="btn outline">Learn More</button>
+    <button class="btn primary" onclick="scrollToSection('download')">Download</button>
+    <button class="btn outline" onclick="window.open('product.html','_blank')">Learn More</button>
   </div>
 </section>
 
+<!-- FEATURES -->
 <section id="features" class="fade">
   <h2>Core Features</h2>
   <div class="grid">
     <div class="card">
-      <h3>Real-Time AI</h3>
-      <p>Tracks attention patterns instantly.</p>
+      <h3>Real-Time Attention Tracking</h3>
+      <p>AI detects focus shifts and behavioral patterns instantly.</p>
     </div>
     <div class="card">
-      <h3>Privacy First</h3>
-      <p>No stored recordings. Local processing only.</p>
+      <h3>100% Privacy First</h3>
+      <p>No video storage. No cloud recording. Everything runs locally.</p>
     </div>
     <div class="card">
-      <h3>Dual Mode</h3>
-      <p>Study Mode & Exam Mode.</p>
+      <h3>Dual Mode System</h3>
+      <p>Study Mode boosts productivity. Exam Mode protects integrity.</p>
     </div>
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section id="how" class="fade">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Camera Detection</h3>
+      <p>The system analyzes attention patterns in real time.</p>
+    </div>
+    <div class="card">
+      <h3>2. AI Processing</h3>
+      <p>Behavior is evaluated using trained machine learning models.</p>
+    </div>
+    <div class="card">
+      <h3>3. Smart Alerts</h3>
+      <p>Focus loss or suspicious activity is flagged instantly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
 <section id="pricing" class="fade">
   <h2>Premium Plans</h2>
   <div class="grid">
     <div class="card">
       <h3>Basic</h3>
+      <p>Free Focus Tracking</p>
       <p>$0 / month</p>
     </div>
     <div class="card highlight">
       <h3>VIP Premium</h3>
+      <p>Advanced AI Analytics</p>
+      <p>Exam Integrity Mode</p>
+      <p>Priority Support</p>
       <p>$9.99 / month</p>
-      <p>Advanced AI + Priority Support</p>
     </div>
     <div class="card">
       <h3>Institution</h3>
-      <p>Custom Licensing</p>
+      <p>Bulk Licensing</p>
+      <p>Custom Integration</p>
+      <p>Contact Us</p>
     </div>
   </div>
 </section>
 
+<!-- DOWNLOAD -->
 <section id="download" class="fade">
-  <h2>Download</h2>
-  <button class="btn primary">Windows</button>
-  <button class="btn primary">macOS</button>
-  <button class="btn primary">Linux</button>
+  <h2>Download TrueFocus</h2>
+  <p>Select your platform below.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Windows</h3>
+      <p>Full installer package</p>
+      <a href="TrueFocus_Setup.exe" download>
+        <button class="btn primary">Download for Windows</button>
+      </a>
+    </div>
+    <div class="card">
+      <h3>macOS</h3>
+      <p>Coming Soon</p>
+      <button class="btn outline" disabled>Available Soon</button>
+    </div>
+    <div class="card">
+      <h3>Linux</h3>
+      <p>Coming Soon</p>
+      <button class="btn outline" disabled>Available Soon</button>
+    </div>
+  </div>
 </section>
 
+<!-- SUPPORT -->
 <section id="support" class="fade">
-  <h2>Support & Updates</h2>
-  <p>Get help, updates, and partnership info.</p>
+  <h2>Support & Resources</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Documentation</h3>
+      <p>Installation guide and usage instructions.</p>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p>Answers to common technical and privacy questions.</p>
+    </div>
+    <div class="card">
+      <h3>Security & Privacy</h3>
+      <p>Full transparency about how data is processed.</p>
+    </div>
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="fade">
   <h2>Contact</h2>
-  <input type="text" placeholder="Name">
-  <input type="email" placeholder="Email">
-  <textarea placeholder="Message"></textarea>
-  <button class="btn primary">Send</button>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button type="submit" class="btn primary">Send</button>
+  </form>
+  <p id="formStatus" style="margin-top:10px;"></p>
 </section>
 
 <footer>
